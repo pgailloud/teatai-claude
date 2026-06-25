@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanoid — Phaser 3</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            height: 100%;
+            background: #0b0c1a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            color: #cfd2ff;
+            overflow: hidden;
+        }
+        #game-container {
+            box-shadow: 0 0 40px rgba(90, 110, 255, 0.35);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            color: #6f7bff;
+            opacity: 0.8;
+        }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <h1>Arkanoid · Phaser 3</h1>
+    <div id="game-container"></div>
+
+    <!-- Phaser 3 embarqué localement : le jeu fonctionne 100 % hors-ligne.
+         Tous les sprites sont dessinés à la main par code
+         (voir js/scenes/BootScene.js). -->
+    <script src="vendor/phaser.min.js"></script>
+
+    <script src="js/scenes/BootScene.js"></script>
+    <script src="js/scenes/MenuScene.js"></script>
+    <script src="js/scenes/GameScene.js"></script>
+    <script src="js/scenes/HUDScene.js"></script>
+    <script src="js/scenes/GameOverScene.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
